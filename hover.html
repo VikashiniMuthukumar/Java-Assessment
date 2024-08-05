@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"rel="stylesheet"/>
+    <script src="https://kit.fontawesome.com/222117f63c.js"crossorigin="anonymous"></script>
+      <style>
+        body {
+            background: #d7b0b0;
+        }
+        i{
+            margin-top: 20px;
+            font-size: 32px;
+            margin-left: 20px;
+            border-radius: 50%;
+            border-style: none;
+            cursor: pointer;
+            padding: 10px;
+            padding-left: 27px;
+            padding-top: 26px;
+        }
+        #facebook{
+            background-color: white;
+            color: #000000;
+        }
+        #twitter{   
+            background-color: white;
+            color: black;
+        }
+        #facebook:hover{
+            color: rgb(24, 119, 242);
+        }
+        #twitter:hover{
+            color: rgb(29 161 242);
+        }
+        #instagram:hover{
+            color: rgb( 214, 41, 118);
+        }
+        #github:hover{
+            color: rgb(241,78,50);
+        }
+        #youtube:hover{
+            color: rgb(255,0,0);
+        }
+        i:hover{
+            color: inherit;
+        }
+        .icons {
+            display: flex;
+            gap: 20px;
+        }
+
+        i{
+            font-family: Roboto;
+            position: relative;
+            width: 50px;
+            height: 50px;
+            background: white;
+            color: #000;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            font-size: 32px;
+            transition: color 0.3s ease, background-color 0.3s ease;
+        }
+
+        i:hover {
+            color: inherit;
+            background-color: inherit;
+        }
+
+        #facebook:hover {
+            color: white;
+            background-color: rgb(24, 119, 242);
+        }
+
+        #twitter:hover {
+            color: white;
+            background-color: rgb(29, 161, 242);
+        }
+
+        #instagram:hover {
+            color: white;
+            background-color: rgb(214, 41, 118);
+        }
+
+        #github:hover {
+            color: white;
+            background-color: black;
+        }
+
+        #youtube:hover {
+            color: white;
+            background-color: rgb(255, 0, 0);
+        }
+
+        .text {
+            position: absolute;
+            transform: translateX(-50%);
+            padding: 5px 10px;
+            background: #3b5998; 
+            color: #fff;
+            border-radius: 4px;
+            font-size: 12px;
+            opacity: 0;
+            visibility: visible;
+            transition: all 0.3s ease;
+            white-space: nowrap;
+        }
+
+        i:hover .text {
+            opacity: 1;
+            visibility: visible;
+            bottom: 70px;
+        }
+
+      </style>
+</head>
+<body>
+    <div class="icons">
+        <i class="fa-brands fa-facebook" id="facebook"><span class="text">Facebook</span></i>
+        <i class="fa-brands fa-twitter" id="twitter"><span class="text">Twitter</span></i>
+        <i class="fa-brands fa-instagram" id="instagram"><span class="text">Instagram</span></i>
+        <i class="fa-brands fa-github" id="github"><span class="text">GitHub</span></i>
+        <i class="fa-brands fa-youtube" id="youtube"><span class="text">YouTube</span></i>
+    </div>
+</body>
+</html>
