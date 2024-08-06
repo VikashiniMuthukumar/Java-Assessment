@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/222117f63c.js"crossorigin="anonymous"></script>
+    <title>Responsive Footer</title>
+    <style>
+        body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+footer {
+    background-color: #000;
+    color: white;
+    padding: 20px 0;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-section {
+    flex-basis: 20%;
+    margin: 10px;
+}
+
+.footer-section h3 {
+    margin-bottom: 10px;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin: 5px 0;
+    padding-top: 10px;
+}
+
+.footer-section ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.footer-section ul li a:hover {
+    text-decoration: underline;
+}
+
+.footer-bottom {
+    text-align: center;
+    padding: 10px;
+    background-color: #222;
+}
+
+@media screen and (max-width: 800px) {
+    .footer-section {
+        flex-basis: 45%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .footer-section {
+        flex-basis: 100%;
+        text-align: center;
+    }
+}
+
+    </style>
+</head>
+<body>
+    <footer>
+        <div class="footer-container">
+            <div class="footer-section">
+                <h3>Services</h3>
+                <ul>
+                    <li>App development</li>
+                    <li>Web development</li>
+                    <li>DevOps</li>
+                    <li>Web designing</li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Social</h3>
+                <ul>
+                    <li><i style="font-size: larger; padding: 10px"class="fa-brands fa-linkedin" ></i>
+                    <span style="padding-left: 20px; font-size: 16px">Linkedin</span></li>
+                    <li><i style="font-size: larger; padding: 10px"class="fa-brands fa-twitter" ></i>
+                    <span style="padding-left: 20px; font-size: 16px">Twitter</span></li>
+                    <li><i style="font-size: larger; padding: 10px"class="fa-brands fa-github" ></i>
+                    <span style="padding-left: 20px; font-size: 16px">Github</span></li>
+                    <li><i style="font-size: larger; padding: 10px"class="fa-brands fa-codepen" ></i>
+                    <span style="padding-left: 20px; font-size: 16px">Codepen</span></li>
+                    <li><i style="font-size: larger; padding: 10px"class="fa-brands fa-instagram" ></i>
+                    <span style="padding-left: 20px; font-size: 16px">Instagram</span></li>
+    
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Quick links</h3>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Blogs</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Address</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipiscing elit. Cupiditate, qui!</p>
+                <h4>Mobile</h4><p> +91-12229*****</p>
+                <h4>Email</h4><p> faraz60@gmail.com</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
